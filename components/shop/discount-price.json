@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shop_discount_prices",
+  "info": {
+    "name": "DiscountPrice",
+    "icon": "dollar-sign"
+  },
+  "options": {},
+  "attributes": {
+    "amount": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

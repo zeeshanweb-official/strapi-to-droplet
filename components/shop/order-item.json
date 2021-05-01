@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_cat_order_items",
+  "info": {
+    "name": "OrderItem",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "amount": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "sum": {
+      "type": "decimal"
+    },
+    "discount": {
+      "type": "decimal"
+    },
+    "product": {
+      "model": "product"
+    }
+  }
+}

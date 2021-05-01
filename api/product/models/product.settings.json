@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "min_order": {
+      "type": "integer"
+    },
+    "in_stock": {
+      "type": "boolean"
+    },
+    "stock_quantity": {
+      "type": "integer"
+    },
+    "code": {
+      "type": "string"
+    },
+    "external_id": {
+      "type": "string"
+    },
+    "characteristics": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shop.product-characteristics"
+    },
+    "category": {
+      "model": "category",
+      "via": "products"
+    },
+    "discount_prices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shop.discount-price"
+    },
+    "downloads": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shop.download-link"
+    },
+    "apps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shop.external-link"
+    },
+    "product_type": {
+      "model": "product-type"
+    },
+    "recommended": {
+      "type": "boolean"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

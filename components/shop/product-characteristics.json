@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_shop_product_characteristics",
+  "info": {
+    "name": "ProductCharacteristics",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "size": {
+      "type": "string"
+    },
+    "have_glue": {
+      "type": "boolean"
+    },
+    "have_anti_metal": {
+      "type": "boolean"
+    },
+    "have_hole": {
+      "type": "boolean"
+    },
+    "material": {
+      "type": "string"
+    },
+    "temperatures": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "chip": {
+      "type": "string"
+    },
+    "compatibility": {
+      "type": "string"
+    },
+    "memory": {
+      "type": "string"
+    },
+    "protocol": {
+      "type": "string"
+    },
+    "reading_distance": {
+      "type": "string"
+    },
+    "shape": {
+      "type": "string"
+    },
+    "waterproof": {
+      "type": "string"
+    }
+  }
+}

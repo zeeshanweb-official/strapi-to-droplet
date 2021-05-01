@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shop_external_links",
+  "info": {
+    "name": "ExternalLink",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
